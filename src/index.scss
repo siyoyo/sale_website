@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url(fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(fonts/OpenSans-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Din Round Regular';
+  src: url(fonts/DinRound-Regular.ttf);
+}
+
+@import 'bulma/sass/utilities/initial-variables';
+
+$family-sans-serif: 'Open Sans', sans-serif;
+$primary: $grey-light;
+$family-primary: $family-sans-serif;
+$size-1: 4rem;
+$size-2: 2.5rem;
+$text: $white-bis;
+
+@import 'bulma/bulma';
+
+@import 'slider.sass';
+
+body {
+  background-color: $black;
+}
+
+.card-content {
+  max-width: 100vw;
+  & p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.title {
+  color: $text;
+  letter-spacing: 0.2rem;
+}
+
+.subtitle {
+  color: $text;
+}
+
+.card {
+  .subtitle,
+  p {
+    color: $black;
+  }
+}
+
+a:hover {
+  color: transparentize($grey-light, 0.5);
+}
+
+a.navbar-item:hover,
+a.navbar-item.is-active,
+.navbar-link:hover,
+.navbar-link.is-active {
+  background-color: transparentize($grey-light, 0.1);
+}
+
+.sk-spinner {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.sk-rotating-plane.sk-spinner > div {
+  margin: auto;
+  color: $white-bis;
+  height: 50px;
+  width: 50px;
+
+  &.sale-spinner {
+    color: $black;
+  }
+}
+
+.hero-subtitle {
+  font-family: 'Din Round Regular', sans-serif;
+}
+
+#progress {
+  margin: auto;
+  margin-bottom: 1.5rem;
+  max-width: 60rem;
+  height: 1rem;
+}
+
+#progress > svg {
+  position: absolute;
+  max-height: 1rem;
+  display: block;
+}
+
+#progress > svg:nth-child(2) {
+  z-index: 3;
+}
+
+// Bugfix on iPhone <= 5s
+@media only screen and (max-width: 320px) {
+  .title.is-size-1 {
+    font-size: 55px !important;
+  }
+}
