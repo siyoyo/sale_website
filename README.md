@@ -15,6 +15,11 @@
     </a>
   </p>
   <p>
+    <a href="https://codeclimate.com/github/ELTCOIN/sale_website/maintainability">
+      <img src="https://api.codeclimate.com/v1/badges/5d28eae58674b2a42c19/maintainability" />
+    </a>
+  </p>
+  <p>
     <a href="https://sale.eltcoin.tech">
       Launch App
     </a>
