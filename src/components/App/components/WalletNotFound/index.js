@@ -17,11 +17,11 @@ class WalletNotFound extends Component {
           <p>
             <b>
               <a
-                href="https://etherscan.io/address/0xbb7c05467c0b7ff78a1753163fd687de1721b663"
+                href="https://etherscan.io/address/0xcc3333acc9dc1f86387b02b4b2b14626a051da8c"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                0xbb7c05467c0b7ff78a1753163fd687de1721b663
+                0xcc3333acc9dc1f86387b02b4b2b14626a051da8c
               </a>
             </b>
           </p>
