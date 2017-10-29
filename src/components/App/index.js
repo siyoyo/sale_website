@@ -13,7 +13,7 @@ import {
 } from './components';
 
 const START_DATE = moment.utc('2017-10-15 22:59');
-const END_DATE = moment.utc('2017-10-30 22:59');
+const END_DATE = moment.utc('2017-10-31 23:59');
 const RATE_CHANGE_THRESHOLD = 300000;
 const START_RATE = 320000 / 10 ** 10;
 
