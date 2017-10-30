@@ -120,11 +120,11 @@ class Sale extends Component {
   renderErrorMessage() {
     let message;
 
-    if (this.props.ethValue < 0.1) {
+    if (+this.props.ethValue < 0.1) {
       message = 'The minimum amount is 0.1 ETH.';
-    } else if (this.props.ethValue > 100) {
+    } else if (+this.props.ethValue > 100) {
       message = 'The maximum amount is 100 ETH.';
-    } else if (this.props.ethValue > this.state.ethBalance) {
+    } else if (+this.props.ethValue > this.state.ethBalance) {
       message = 'Your balance is too low.';
     }
 
@@ -190,9 +190,9 @@ class Sale extends Component {
               onClick={() => this.sendPayment()}
               disabled={
                 this.props.eltcoinValue <= 0 ||
-                this.props.ethValue < 0.1 ||
-                this.props.ethValue > 100 ||
-                this.props.ethValue > this.state.ethBalance
+                +this.props.ethValue < 0.1 ||
+                +this.props.ethValue > 100 ||
+                +this.props.ethValue > this.state.ethBalance
               }
             >
               Buy {this.props.eltcoinValue} ELTCOIN
