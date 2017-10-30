@@ -66,7 +66,7 @@ class App extends Component {
         const tokensSold = json.value;
         const tokensSoldCurrentRound = tokensSold % RATE_CHANGE_THRESHOLD;
         const currentPrice =
-          0.01 + 0.01 * Math.floor(tokensSold / RATE_CHANGE_THRESHOLD);
+          0.02 + 0.01 * Math.floor(tokensSold / RATE_CHANGE_THRESHOLD);
 
         const newRate =
           START_RATE +
