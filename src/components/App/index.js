@@ -41,8 +41,6 @@ class App extends Component {
     window.Raven
       .config('https://ad5e6c16abb2421a872fdcae8de08703@sentry.io/230880')
       .install();
-    this.getTokensSold();
-    this.checkWeb3();
   }
 
   startAccountChangeListener(userAccount) {
@@ -215,7 +213,7 @@ class App extends Component {
             currentPrice={this.state.currentPrice}
             selectedAmount={this.state.eltcoinValue}
           />{' '}
-          {this.renderMainContent()} {' '}
+          {this.renderMainContent()}
         </div>{' '}
         <Footer />
       </div>
